@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,36 +37,36 @@
       <form class="form-main form__global" method="post" action="https://echo.htmlacademy.ru">
         <ul class="form-cat form-main__cat">
           <li class="form-cat__item">
-            <label class="form-main__label" for="CatName">Имя:*</label>
+            <label class="form-cat__label" for="CatName">Имя:*</label>
             <input class="form-cat__input" type="text" name="CatName" id="CatName" value="Барсик"></li>
           <li class="form-cat__item">
-            <label class="form-main__label" for="CatWeight">Вес (кг):*</label>
+            <label class="form-cat__label" for="CatWeight">Вес (кг):*</label>
             <input class="form-cat__input" type="number" name="CatWeight" id="CatWeight" value="7"></li>
           <li class="form-cat__item">
-            <label class="form-main__label" for="CatAge">Возраст (лет):</label>
+            <label class="form-cat__label" for="CatAge">Возраст (лет):</label>
             <input class="form-cat__input" type="number" name="CatAge" id="CatAge" value="7"></li>
         </ul>
-        <ul class="form-option">
+        <ul class="form-option form-main__option">
           <li class="form-option__item">
-            <label class="form-main__label" for="losing-weight">Похудение</label>
+            <label class="form-option__label" for="losing-weight">Похудение</label>
             <input class="form-option__input" type="radio" name="losing-weight" id="losing-weight">
           </li>
           <li class="form-option__item">
-            <label class="form-main__label" for="Mass-set">Набор массы</label>
+            <label class="form-option__label" for="Mass-set">Набор массы</label>
             <input class="form-option__input" type="radio" name="Mass-set" id="Mass-set">
           </li>
           <li class="form-option__item">
-            <label class="form-main__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
+            <label class="form-option__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
             <input class="form-option__input" type="radio" name="recommendation" id="recommendation">
           </li>
         </ul>
         <h2 class="form__title">Контактные данные(владельца кота)</h2>
-        <ul class="form-owner">
+        <ul class="form-owner form-main__owner">
           <li class="form-owner__item">
-            <label class="form-main__label" for="ownerName">E-mail:*</label>
+            <label class="form-owner__label" for="ownerName">E-mail:*</label>
             <input class="form-owner__input" type="email" name="ownerName" id="ownerName" value="kuklachev@gmail.com"></li>
           <li class="form-owner__item">
-            <label class="form-main__label" for="ownerPhone">Телефон:*</label>
+            <label class="form-owner__label" for="ownerPhone">Телефон:*</label>
             <input class="form-owner__input" type="tel" name="ownerPhone" id="ownerPhone" value="8 (960) 900-60-90"></li>
         </ul>
         <h2 class="form__title">Комментарий</h2>
@@ -74,7 +75,7 @@
           <textarea class="form-feedback__text" id="review" name="feedback" rows="5">Расскажите обо всех повадках кота</textarea>
         </div>
         <h2 class="form__title">Дополнительно</h2>
-        <ul class="form-additionally">
+        <ul class="form-additionally form-main__additionally">
           <li class="form-additionally__item">
             <label class="form-additionally__label" for="sweetener">Сахарозаменитель</label>
             <input class="form-additionally__input" id="sweetener" type="checkbox" name="sweetener" class="visually-hidden" checked>
@@ -121,8 +122,7 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a href="" class="copyright__academy">
-          <img src="#" alt="Логотип HTML Academy">
+        <img src="#" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
