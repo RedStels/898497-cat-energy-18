@@ -1,1 +1,27 @@
-{\rtf1}
+.extra-goods__head {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.extra-goods__list {
+  list-style: none;
+}
+
+.extra-goods__title {
+  font-size: 16px;
+  line-height: 16px; 
+}
+
+.extra-goods__value, .extra-goods__field {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.extra-goods__button {
+  font-size: 16px;
+  line-height: 20px;  
+  color: $white;
+}

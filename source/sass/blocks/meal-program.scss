@@ -1,0 +1,22 @@
+.meal-program {
+  list-style: none;
+  @include resetter();
+}
+
+.meal-program__item-title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.meal-program__item__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.meal-program__item-catalog {
+  font-size: 16px;
+  line-height: 16px;
+  color: black;
+  text-decoration: none;
+}

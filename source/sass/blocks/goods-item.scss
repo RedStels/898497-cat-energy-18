@@ -1,0 +1,32 @@
+
+
+.goods-item__link {
+  color: $black;
+  text-decoration: none;
+}
+
+.goods-item__name {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.goods-item__button {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+}
+
+.goods-table__value {
+  font-family: $second-font;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.goods-table__field {
+  font-family: $second-font;	
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}

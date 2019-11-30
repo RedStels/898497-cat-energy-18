@@ -1,4 +1,40 @@
+@import "normalize";
+@import "fonts";
 @import "variables";
 @import "scaffolding";
-@import "page-header";
-@import "main-nav";
+@import "mixins";
+
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/meal.scss";
+@import "blocks/header.scss";
+@import "blocks/meal-program.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantages-list.scss";
+@import "blocks/example.scss";
+@import "blocks/example-table.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";
+
+@import "blocks/page-catalog.scss";
+@import "blocks/goods.scss";
+@import "blocks/goods-list.scss";
+@import "blocks/goods-item.scss";
+@import "blocks/goods-table.scss";
+@import "blocks/more.scss";
+@import "blocks/extra-goods.scss";
+@import "blocks/offer.scss";
+
+@import "blocks/page-form.scss";
+@import "blocks/form.scss";
+@import "blocks/form-main.scss";
+@import "blocks/form-cat.scss";
+@import "blocks/form-option.scss";
+@import "blocks/form-owner.scss";
+@import "blocks/form-feedback.scss";
+@import "blocks/form-additionally.scss";
+@import "blocks/form-additionally.scss";

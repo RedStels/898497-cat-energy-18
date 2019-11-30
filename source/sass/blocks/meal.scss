@@ -1,1 +1,29 @@
-{\rtf1}
+.meal {
+/*  width: 305px;
+  height: 320px;*/
+  background-image: url(/img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+}
+
+.header__intro {
+  @include resetter();
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $white;
+}
+
+.header__slogan {
+  @include resetter();
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+}
+
+.header__to-form {
+  @include resetter();
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  text-decoration: none;
+}

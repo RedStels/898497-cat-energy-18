@@ -1,1 +1,21 @@
-{\rtf1}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 320px;
+}
+
+.social-list__link--vkontakte {
+  width: 22px;
+  height: 12px;
+}
+
+.social-list__link--instagram {
+  width: 16px;
+  height: 16px;
+}
+
+.social-list__link--facebook {
+  width: 10px;
+  height: 19px;
+}

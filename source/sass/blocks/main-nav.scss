@@ -1,24 +1,15 @@
-.main-nav {
-  position: relative;
-
-  width: 320px;
-  min-height: 65px;
-  margin: 0 auto;
-
-  background-color: #826550;
-}
-
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-
+.site-list {
   list-style: none;
 }
 
-@media (min-width: @tablet-width) {
-
+.main-nav__list {
+  @include resetter();
+  font-size: 20px;
+  line-height: 20px;	
 }
 
-@media (min-width: @desktop-width) { 
 
-}
+
+
+/*@media (min-width: @tablet-width) {}
+@media (min-width: @desktop-width) {}*/
