@@ -5,25 +5,4 @@
   background-repeat: no-repeat;
 }
 
-.meal-header__intro {
-  @include resetter();
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $white;
-}
 
-.meal-header__slogan {
-  @include resetter();
-  font-size: 14px;
-  line-height: 14px;
-  color: $white;
-}
-
-.meal-header__to-form {
-  @include resetter();
-  font-size: 14px;
-  line-height: 18px;
-  color: $white;
-  text-decoration: none;
-}
