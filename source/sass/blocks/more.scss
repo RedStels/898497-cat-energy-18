@@ -1,0 +1,20 @@
+.more__title {
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: 700;
+}
+
+.more__text {
+  font-family: $second-font;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.more__button {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $grey-button-color;
+  text-decoration: none;
+  color: $input-icon-color;
+}
