@@ -1,11 +1,115 @@
-.contacts__invite {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-}
+  .contacts {
+    background-color: $white;
+  }
 
-.contacts__text {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-}
+  .page-catalog .contacts {
+    background-color: $grey;
+  }
+
+  .contacts__wrapper {
+    width: 280px;
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .contacts__invite {
+    width: 130px;
+    @include fonts(16px, 20px);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .contacts__invite span {
+    display: inline-block;
+  }
+
+  .contacts__text {
+    width: 140px;
+    @include fonts(14px, 20px);
+    font-family: $second-font;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .contacts__wrapper {
+      width: 625px;
+      min-height: 192px;
+      justify-content: space-between;
+    }
+
+    .page-form .contacts {
+      background-color: $grey;
+    }
+
+    .page-form .contacts__wrapper {
+      margin-top: 38px;
+      min-height: 200px;
+    }
+
+    .page-form .contacts__map {
+      height: 397px;
+    }
+
+    .contacts__invite {
+      min-height: 80px;
+      width: 170px;
+      @include fonts(20px, 25px);
+      font-weight: 700;
+    }
+
+    .contacts__text {
+      position: relative;
+      width: 185px;
+      @include fonts(16px, 20px);
+      text-align: right;
+      margin-top: 13px;
+    }
+
+    .contacts__text-bottom {
+      display: inline-block;
+      padding-top: 20px;
+    }
+
+    .contacts__map {
+      height: 400px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .contacts {
+      position: relative;
+    }
+
+    .contacts__wrapper {
+      position: absolute;
+      width: 570px;
+      min-height: 200px;
+      top: 98px;
+      left: 342px;
+      background-color: $white;
+      justify-content: flex-start;
+    }
+
+
+    .page-form .contacts__wrapper {
+      top: 57px
+    }
+
+    .contacts__invite {
+      width: 170px;
+      @include fonts(20px, 25px);
+      padding-left: 75px;
+      padding-top: 10px;
+      margin-right: 71px;
+    }
+
+    .contacts__text {
+      width: 155px;
+      @include fonts(16px, 20px);
+      margin-top: 21px;
+      text-align: left;
+    }
+  }

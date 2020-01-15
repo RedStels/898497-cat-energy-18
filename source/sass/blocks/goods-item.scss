@@ -1,17 +1,252 @@
+.goods-item {
+  height: 210px;
+  @include resetter();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .goods-item__link {
+  position: relative;
+  width: 140px;
+  height: 144px;
   color: $input-icon-color;
   text-decoration: none;
+  left: 20px;
 }
 
 .goods-item__name {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
+  position: relative;
+  top: -141px;
+  left: 141px;
+  width: 82px;
+  @include fonts(16px, 20px);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .goods-item__button {
-  font-size: 16px;
-  line-height: 20px;
-  color: $main-menu-text;
+  @include fonts(16px, 20px);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  width: 280px;
+  top: 144px;
+  left: -280px;
+  padding: 10px 0px;
+  background-color: $green;
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    background-color: $green--dark;
+  }
+
+  &:active {
+    color: $green--light;
+  }
 }
 
+.goods-item__link--plus {
+  position: relative;
+  top: 26px;
+  left: 145px;
+  width: 30px;
+  height: 30px;
+}
+
+.goods-item__title {
+  margin-top: 54px;
+  margin-left: 60px;
+  @include fonts(16px, 12px);
+  text-transform: uppercase;
+}
+
+.goods-item__text {
+  font-family: $second-font;
+  @include fonts(12px, 16px);
+  font-weight: 400;
+  margin-left: 51px;
+
+}
+
+.goods-item__button--all {
+  position: relative;
+  top: 9px;
+  left: 22px;
+  color: $black--light;
+  background-color: $grey;
+
+  &:hover {
+    background-color: $grey--dark;
+  }
+
+  &:active {
+    color: $grey--light;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-item {
+    width: 325px;
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    background-color: $grey;
+  }
+
+  .goods-item__link {
+    width: 324px;
+    height: 172px;
+  }
+
+  .goods-item__image {
+    position: absolute;
+    top: -86px;
+    left: -20px;
+    width: 324px;
+    height: 208px;
+    object-fit: contain;
+  }
+
+  .goods-item__image-small {
+    top: -66px;
+  }
+
+  .goods-item__name {
+    @include fonts(20px, auto);
+    position: relative;
+    top: 140px;
+    left: 68px;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .goods-item__button {
+    position: relative;
+    top: 80px;
+    left: 38px;
+    width: 249px;
+  }
+
+  .goods-item__title {
+    @include fonts(20px, 20px);
+    width: 150px;
+    text-align: center;
+    padding-top: 48px;
+    padding-left: 28px;
+  }
+
+  .goods-item__text {
+    @include fonts(16px, auto);
+    width: 200px;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 11px;
+    padding-left: 10px;
+  }
+
+  .goods-item__link--plus {
+    width: 60px;
+    height: 60px;
+    top: 52px;
+    left: 133px;
+  }
+
+  .goods-item__link--plus-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .goods-item__button--all {
+    top: 72px;
+    margin-top: 0px;
+  }
+
+  .goods-item__more {
+    width: 323px;
+    background-color: $white;
+    outline: 1px solid $grim--light;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item {
+    width: 245px;
+    height: 430px;
+  }
+
+  .goods-item__link {
+    width: 150px;
+    height: 150px;
+  }
+
+  .goods-item__image {
+    top: -82px;
+    left: 28px;
+    object-fit: none;
+  }
+
+  .goods-item__image-small {
+    top: -64px;
+  }
+
+
+  .goods-item__name {
+    top: 143px;
+    left: 28px;
+  }
+
+  .goods-item__button {
+    width: 170px;
+    left: 38px;
+    top: 105px;
+  }
+
+  .goods-item__more {
+    width: 245px;
+    background-color: $white;
+    outline: 1px solid $grim--light;
+  }
+
+  .goods-item__link--plus {
+    width: 60px;
+    height: 60px;
+    top: 2px;
+    left: 33px;
+  }
+
+  .goods-item__link--plus-icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 53px;
+    margin-left: 60px;
+  }
+
+  .goods-item__title {
+    @include resetter();
+    margin-top: 105px;
+    margin-left: 48px;
+    width: 150px;
+    text-align: center;
+  }
+
+  .goods-item__text {
+    @include resetter();
+    width: 200px;
+    text-align: center;
+    margin-left: 22px;
+    margin-top: 26px;
+  }
+
+  .goods-item__text span {
+    display: inline-block;
+    padding-top: 3px;
+  }
+  .goods-item__button--all {
+    top: 86px;
+    margin-top: 0px;
+  }
+}

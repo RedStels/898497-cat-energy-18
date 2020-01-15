@@ -1,0 +1,46 @@
+.form-feedback {
+  width: 320px;
+}
+ 
+.form-feedback__text {
+  width: 263px;
+  min-height: 135px;
+  padding-top: 12px;
+  padding-left: 14px;
+  margin-top: 18px;
+  margin-left: 20px;
+  border: 1px solid $grim--light;
+
+  @include fonts(16px, 18px);
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:hover {
+    border-color: $grim--dark;
+  }
+
+  &:active {
+    border-color: $black--light;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-feedback__text {
+    width: 609px;
+    min-height: 162px;
+    padding-top: 10px;
+    padding-left: 19px;
+    @include fonts(20px, 30px);
+    margin-left: 70px;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-feedback__text {
+    width: 1199px;
+    height: 150px;
+    margin-left: 341px;
+  }
+}
+ 

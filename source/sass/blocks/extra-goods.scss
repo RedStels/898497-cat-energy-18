@@ -1,27 +1,281 @@
-.extra-goods__head {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
+.extra-goods {
+  position: relative;
+  width: 320px;
+  @include resetter();
 }
 
 .extra-goods__list {
+  width: 280px;
+  padding: 0px;
   list-style: none;
+  margin: 0 auto;
+}
+
+.extra-goods__item {
+  width: 280px;
+  min-height: 128px;
+  border-top: 1px solid $grim--dark;
+}
+
+.extra-goods__item:last-child {
+  border-bottom: 1px solid $grim--dark;
+}
+
+.extra-goods__table tr {
+  width: 282px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-goods__table {
+  margin-top: 12px;
+  margin-bottom: 17px;
+  border-collapse: collapse;
+}
+
+.extra-goods__head {
+  @include fonts(24px, 24px);
+  font-weight: 700;
+  padding: 8px 0px 11px 20px;
+}
+
+.extra-goods__head::after {
+  content: "";
+
+  display: block;
+  position: relative;
+  top: -10px;
+  left: 249px;
+  width: 51px;
+  height: 3px;
+  background-color: $green;
 }
 
 .extra-goods__title {
-  font-size: 16px;
-  line-height: 16px; 
+  @include fonts(16px, 16px);
+  text-transform: uppercase;
+  margin: 13px 0px 10px 2px;
 }
 
-.extra-goods__value, .extra-goods__field {
+.extra-goods__value,
+.extra-goods__field {
   font-family: $second-font;
-  font-size: 14px;
-  line-height: 14px;
+  @include fonts(14px, 14px);
   font-weight: 400;
 }
 
 .extra-goods__button {
-  font-size: 16px;
-  line-height: 20px;  
+  position: relative;
+  @include fonts(16px, 20px);
   color: $main-menu-text;
+  padding: 8px 110px;
+  text-transform: uppercase;
+  text-align: center;
+  top: 7px;
+  background-color: $green;
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    background-color: $green--dark;
+  }
+
+  &:active {
+    color: $green--light;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra-goods {
+    position: relative;
+    width: 768px;
+  }
+
+  .extra-goods__head {
+    width: 370px;
+    @include fonts(36px, 36px);
+    padding-left: 0px;
+    position: relative;
+    left: 68px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+
+      background-color: $green;
+      height: 3px;
+    }
+
+    &::before {
+      top: 31px;
+      left: -70px;
+      width: 30px;
+      margin-right: 25px;
+    }
+
+    &::after {
+      top: 31px;
+      width: 325px;
+      margin-left: 125px;
+    }
+  }
+
+  .extra-goods__list {
+    width: 710px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  .extra-goods__item {
+    width: 708px;
+    min-height: 138px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    border-top: 1px solid $grim--dark;
+    border-left: 1px solid $grim--dark;
+    border-right: 1px solid $grim--dark;
+  }
+
+  .extra-goods__table {
+    border-collapse: collapse;
+  }
+
+  .extra-goods__table tr {
+    display: flex;
+    margin-top: 4px;
+    width: 220px;
+    margin-right: 35px;
+  }
+
+  .extra-goods__title {
+    text-align: left;
+    width: 320px;
+    @include fonts(20px, 20px);
+    text-transform: uppercase;
+    margin-bottom: 41px;
+    margin-left: 40px;
+  }
+
+  .extra-goods__value {
+    width: 140px;
+    position: relative;
+    right: 19px;
+    text-align: right;
+  }
+
+  .extra-goods__value,
+  .extra-goods__field {
+    font-family: $second-font;
+    @include fonts(16px, 20px);
+    font-weight: 400;
+  }
+
+  .extra-goods__button {
+    @include fonts(16px, 20px);
+    padding: 10px 285px;
+    position: relative;
+    top: -15px;
+    left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-goods {
+    position: relative;
+    width: 1440px;
+    height: 425px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+  }
+
+  .extra-goods__head {
+    width: 1440px;
+    @include fonts(36px, 36px);
+    position: relative;
+    top: -102px;
+    left: 110px;
+    margin-bottom: 0px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+
+      background-color: $green;
+      height: 3px;
+    }
+
+    &::before {
+      left: -110px;
+      width: 70px;
+    }
+
+    &::after {
+      top: 31px;
+      width: 955px;
+    }
+  }
+
+  .extra-goods__list {
+    width: 893px;
+    position: relative;
+    top: -102px;
+    left: -163px;
+  }
+
+  .extra-goods__item {
+    width: 893px;
+    min-height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid $grim--dark;
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra-goods__table {
+    position: relative;
+    left: 104px;
+    top: 1px;
+    width: 320px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .extra-goods__value {
+    text-align: left;
+  }
+
+  .extra-goods__field {
+    position: relative;
+    left: 50px;
+    text-align: right;
+  }
+
+  .extra-goods__item:nth-child(2) .extra-goods__field{
+    left: 41px;
+  }
+
+  .extra-goods__title {
+    width: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .extra-goods__button {
+    position: relative;
+    top: 0px;
+    left: 2px;
+    @include fonts(16px, 20px);
+    padding: 10px 92px;
+  }
 }

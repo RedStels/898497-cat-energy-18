@@ -1,3 +1,166 @@
 .form-owner {
   list-style: none;
+  @include resetter();
+  display: flex;
+  flex-direction: column;
+}
+
+.form-owner__item {
+  position: relative;
+  @include fonts(16px, 18px);
+  text-transform: uppercase;
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 18px;
+}
+
+.form-owner__item:nth-child(2) {
+  margin-top: 14px;
+}
+ 
+.form-owner__input {
+  text-transform: uppercase;
+  border: 1px solid $grim--light;
+  padding: 12px 13px;
+  font-weight: 700;
+
+  &:hover {
+    border-color: $grim--dark;
+  }
+
+  &:active {
+    border-color: $black--light;
+  }
+}
+
+
+.form-owner__input--email {
+  width: 190px;
+}
+
+.form-owner__input--phone {
+  width: 175px;
+}
+
+.form-owner__item svg {
+  position: absolute;
+  top: 12px;
+  left: 247px;
+}
+
+.form-owner__image-email {
+  padding-top: 3px;
+  width: 17px;
+  height: 13px;
+}
+
+.form-owner__image-phone {
+  width: 20px;
+  height: 20px;
+}
+
+.form-owner__item:active svg {
+  fill: green;
+}
+
+@media (min-width: $tablet-width) {
+
+  .form-owner {
+    width: 740px;
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    margin-top: 15px;
+  }
+
+  .form-owner__item {
+    width: 635px;
+    height: 60px;
+    margin-top: 60px;
+    @include fonts(20px, 20px);
+    text-transform: uppercase;
+  }
+
+  .form-owner__item:last-child {
+    margin-top: 11px;
+    margin-bottom: 0px;
+    margin-right: 55px;
+  }
+
+  .form-owner__input {
+    padding: 12px 10px 15px 20px;
+  }
+
+  .form-owner__input--email {
+    width: 522px;
+  }
+
+
+  .form-owner__input--phone {
+    width: 505px;
+  }
+
+  .form-owner__item svg {
+    position: absolute;
+    top: 15px;
+    left: 594px;
+  }
+
+  .form-owner__image-phone {
+    padding-top: 2px;
+    padding-left: 2px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .form-owner {
+    width: 1220px;
+    min-height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 5px;
+    margin-top: 76px;
+    margin-bottom: 40px;
+  }
+
+  .form-owner__item {
+    width: 567px;
+    margin: 0px;
+  }
+
+   .form-owner__item:last-child {
+    margin: 0px;
+    width: 575px;
+  }
+
+ .form-owner__input {
+    padding: 12px 10px 15px 19px;
+  }
+
+  .form-owner__input--email {
+    width: 454px;
+  }
+
+
+  .form-owner__input--phone {
+    width: 443px;
+  }
+
+ .form-owner__item svg {
+    position: absolute;
+    top: 15px;
+    left: 531px;
+  }
+
+  .form-owner__image-phone {
+    padding-top: 2px;
+    padding-left: 3px;
+  }
 }

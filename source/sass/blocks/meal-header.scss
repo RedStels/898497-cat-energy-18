@@ -1,22 +1,123 @@
+.meal__header {
+  width: 280px;
+  margin: 0 auto;
+  min-height: 480px;
+  text-align: center;
+}
+ 
 .meal-header__intro {
   @include resetter();
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
+  @include fonts(36px, 36px);
+  font-weight: 700;
   color: $main-menu-text;
+  padding-top: 26px;
 }
 
 .meal-header__slogan {
+  display: block;
+  position: relative;
   @include resetter();
-  font-size: 14px;
-  line-height: 14px;
+  @include fonts(14px, 14px);
+  font-weight: 700;
   color: $main-menu-text;
+  padding-top: 27px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.meal-header__image {
+  padding-bottom: 9px;
 }
 
 .meal-header__to-form {
   @include resetter();
-  font-size: 14px;
-  line-height: 18px;
+  @include fonts(14px, 18px);
   color: $main-menu-text;
+  text-transform: uppercase;
   text-decoration: none;
+  padding: 9px 72px;
+  font-style: inherit;
+  background-color: $green;
+}
+
+
+@media (min-width: $tablet-width) {
+  .meal__header {
+    width: 710px;
+    background-image: none;
+  }
+
+
+  .meal-header__image {
+    position: relative;
+    top: -10px;
+    width: 710px;
+    height: 610px;
+  }
+
+  .meal-header__intro {
+    width: 430px;
+    padding-left: 89px;
+    @include fonts(60px, 60px);
+    margin-top: 8px;
+    color: $black;
+    text-align: left;
+  }
+
+  .meal-header__slogan {
+    padding-left: 89px;
+    margin-top: 15px;
+    @include fonts(20px, 20px);
+    color: $black;
+    text-align: left;
+  }
+
+  .meal-header__to-form {
+    @include fonts(20px, 20px);
+    position: absolute;
+    left: 120px;
+    top: 370px;
+    padding: 15px 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .meal-header {
+    width: 1260px;
+  }
+
+  .meal-header__intro {
+    margin-top: 80px;
+    padding-left: 100px;
+  }
+
+  .meal-header__slogan {
+    padding-left: 100px;
+    margin-top: 14px;
+    @include fonts(20px, 20px);
+    color: $black;
+    text-align: left;
+  }
+
+  .meal-header__to-form {
+    top: 457px;
+    left: 421px;
+    padding: 15px 28px;
+    &:hover {
+      background-color: $green--dark;
+    }
+
+    &:active {
+      color: $green--light;
+    }
+  }
+
+  .meal-header__image {
+    position: absolute;
+    top: 141px;
+    left: 794px;
+    width: 550px;
+    height: 500px;
+  }
 }

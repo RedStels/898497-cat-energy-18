@@ -1,7 +1,124 @@
+.main-nav {
+  position: relative;
+  margin: 0 auto;
+  background-color: $white;
+}
+ 
 .main-nav__list {
   @include resetter();
-  font-size: 20px;
-  line-height: 20px;	
+  @include fonts(20px, 20px);
+  text-align: center;
+  font-weight: 400;
 }
-/*@media (min-width: @tablet-width) {}
-@media (min-width: @desktop-width) {}*/
+
+ .main-nav--closed::before {
+  content: "";
+
+  position: absolute;
+  top: -43px;
+  left: 275px;
+  width: 24px;
+  height: 2px;
+  z-index: 1;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+.main-nav--closed .page-header__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 7px 0 0 rgba(255, 255, 255, 0.3),
+    0 14px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav--opened {
+  top: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -35px;
+    left: 280px;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: $black;
+    z-index: 1;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $black;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    @include resetter();
+    width: 475px;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-right: 13px;
+  }
+
+  .main-nav__list {
+    min-height: 100px;
+    font-weight: 700;
+  }
+
+  .main-nav--closed::before,
+  .main-nav--opened::before,
+  .main-nav--opened::after {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    position: absolute;
+    width: 480px;
+    top: 33px;
+    left: 129px;
+    font-weight: 700;
+    z-index: 0;
+  }
+
+  .main-nav {
+    position: absolute;
+    width: 125px;
+    height: 200px;
+    top: 3px;
+    left: 953px;
+  }
+
+  .main-nav__only-index {
+    position: absolute;
+
+    width: 708px;
+    height: 660px;
+    top: 0px;
+    left: 950px;
+
+    padding-top: 35px;
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-color: $green;
+  }
+
+  .main-nav__only-index .main-nav__list {
+    top: 35px;
+    left: 130px;
+    width: 485px;
+  }
+}

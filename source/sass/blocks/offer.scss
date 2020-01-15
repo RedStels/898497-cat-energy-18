@@ -1,13 +1,90 @@
 .offer {
-  height: 290px;
+  position: relative;
+  width: 280px;
+  height: 324px;
   background-image: url(../img/gift-photo-mobile@1x.jpg);
   background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .offer__title {
+  width: 170px;
+  text-align: center;
   font-family: $second-font;
-  font-size: 16px;
-  line-height: 20px;
+  @include fonts(16px, 20px);
   font-weight: 400;
   color: $main-menu-text;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+
+.offer__title::before {
+  content: "";
+  display: block;
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 60px;
+  margin: 0 auto;
+  padding-bottom: 63px;
+}
+
+@media (min-width: $tablet-width) {
+  .offer {
+    position: relative;
+    width: 710px;
+    height: 200px;
+    top: 28px;
+    background-image: url(../img/gift-photo-tablet@1x.jpg);
+    margin-bottom: 114px;
+  }
+
+  .offer__title {
+    position: relative;
+    width: 165px;
+    font-weight: 400;
+    padding-top: 72px;
+    margin-left: 425px;
+    text-align: left;
+  }
+
+  .offer__title::before {
+    content: "";
+    padding: 0px;
+    position: absolute;
+    left: -333px;
+    top: 68px;
+    background-image: url(../img/icon-gift.svg);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer {
+    position: absolute;
+    width: 245px;
+    height: 290px;
+    background-image: url(../img/gift-photo-desktop@1x.jpg);
+    margin: 0px;
+    top: 53px;
+    left: 1085px;
+  }
+
+  .offer__title {
+    position: relative;
+    width: 165px;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 186px;
+    margin-left: 40px;
+  }
+
+  .offer__title::before {
+    content: "";
+    padding: 0px;
+    position: absolute;
+    left: 55px;
+    top: 65px;
+    background-image: url(../img/icon-gift.svg);
+  }
 }
