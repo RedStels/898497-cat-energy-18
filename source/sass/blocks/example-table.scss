@@ -1,10 +1,103 @@
+.example-table {
+  width: 280px;
+  margin-bottom: 29px;
+}
+
+.example-table tr {
+  display: flex;
+  justify-content: space-between;
+}
+
 .example-table__value {
-  font-size: 24px;
-  line-height: 24px;
+  @include fonts(24px, 24px);
   font-weight: 400;
+  width: 116px;
+  height: 40px;
+  text-align: center;
+  padding-top: 13px;
+  text-transform: uppercase;
+  border: 1px solid $grey--darken;
+  border-radius: 3px;
 }
 
 .example-table__field {
-  font-size: 12px;
-  line-height: 12px;
+  position: relative;
+  @include fonts(12px, 12px);
+  font-weight: 400;
+  font-family: $second-font;
+
+}
+
+.example-table__field p {
+  display: block;
+  position: absolute;
+  background-color: $grey;
+  text-align: center;
+}
+
+.example-table__text-first {
+  top: -22px;
+  left: 18px;
+  width: 80px;
+}
+
+.example-table__text-second {
+  top: -21px;
+  left: -99px;
+  width: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .example-table {
+    margin-top: 52px;
+  }
+
+  .example-table__value {
+    @include fonts(30px, 37px);
+    width: 157px;
+    height: 57px;
+    margin: 0;
+    margin-right: 42px;
+    font-weight: 700;
+  }
+
+  .example-table__field p {
+    padding: 0 1px;
+    background-color: $white;
+    @include fonts(14px, 14px);
+  }
+
+  .example-table tr {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .example-table__text-first {
+    width: 105px;
+    top: -24px;
+    left: -75px;
+  }
+
+  .example-table__text-second {
+    width: 130px;
+    top: -24px;
+    left: -85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-table {
+    margin-top: 65px;
+
+  }
+
+  .example-table__value {
+    padding-left: 2px;
+  }
+
+  .example-table__field p {
+    padding: 0px 1px;
+    background-color: $grey;
+
+  }
 }

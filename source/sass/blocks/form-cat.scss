@@ -1,3 +1,129 @@
 .form-cat {
+  width: 300px;
+  min-height: 186px;
+  @include resetter();
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  border-bottom: 1px solid $grim--light;
+  padding-left: 20px;
+}
+
+.form-cat__item {
+  width: 280px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.form-cat__input {
+  min-height: 40px;
+  padding-left: 14px;
+  border: 1px solid $grim--light;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: $grim--dark;
+  }
+
+  &:active {
+    border-color: $black--light;
+  }
+}
+
+.form-cat__item:first-child .form-cat__input {
+  width: 211px;
+}
+
+.form-cat__item:nth-child(2) .form-cat__input {
+  width: 187px;
+}
+
+.form-cat__item:last-child .form-cat__input {
+  width: 155px;
+}
+
+
+.form-cat__input[type="number"]::-webkit-outer-spin-button,
+.form-cat__input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-cat__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-cat__input[type="number"]:hover,
+.form-cat__input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+.form-cat__input[type=number]::-webkit-inner-spin-button,
+.form-cat__input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form-cat {
+    width: 628px;
+    border-bottom: none;
+    padding-left: 0px;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+
+  .form-cat__item {
+    width: 630px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    @include fonts(20px, 20px);
+  }
+
+  .form-cat__input {
+    text-transform: uppercase;
+    padding: 5px 0px 5px 20px;
+  }
+
+  .form-cat__item:first-child .form-cat__input {
+    width: 545px;
+  }
+
+  .form-cat__item:nth-child(2) .form-cat__input {
+    width: 514px;
+  }
+
+  .form-cat__item:last-child .form-cat__input {
+    width: 475px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-cat {
+    width: 570px;
+    position: absolute;
+    margin-left: 342px;
+    margin-top: 10px;
+  }
+ 
+  .form-cat__item {
+    width: 570px;
+  }
+
+  .form-cat__item:first-child .form-cat__input {
+    width: 485px;
+  }
+
+  .form-cat__item:nth-child(2) .form-cat__input {
+    width: 454px;
+  }
+
+  .form-cat__item:last-child .form-cat__input {
+    width: 415px;
+  }
 }

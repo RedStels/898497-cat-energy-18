@@ -1,4 +1,33 @@
 .goods__head {
-  font-size: 36px;
-  line-height: 60px;
+  @include resetter();
+  @include fonts(36px, 60px);
+  border-bottom: 1px solid $grey;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods__head {
+    @include fonts(60px, 60px);
+    @include resetter();
+    border-style: none;
+    margin-bottom: 170px;
+    padding-top: 33px;
+    padding-left: 30px;
+  }
+} 
+
+@media (min-width: $desktop-width) {
+  .goods__head {
+    position: inherit;
+    padding-left: 40px;
+    margin-bottom: 166px;
+  }
+
+  .goods {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 }

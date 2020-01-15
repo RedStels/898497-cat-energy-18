@@ -3,11 +3,60 @@
 }
 
 .form__head {
-  font-style: 36px;
-  line-height: 60px;
+  padding-left: 20px;
+  margin-top: 14px;
+  margin-bottom: 25px;
+  @include fonts(36px, 60px);
 }
 
 .form__content {
-  font-style: 14px;
-  line-height: 18px;	
+  width: 230px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  @include fonts(14px, 18px);
+}
+
+.form__label {
+  @include fonts(16px, 18px);
+  text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .form__label {
+    @include fonts(20px, 20px);
+  }
+
+  .form__head {
+    @include fonts(60px, 60px);
+    padding-left: 30px;
+    margin-top: 34px;
+    margin-bottom: 56px;
+  }
+
+  .form__content {
+    width: 330px;
+    padding-left: 70px;
+    margin-bottom: 55px;
+    @include fonts(20px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .form__head {
+    margin-top: 72px;
+    padding-left: 342px;
+  }
+
+  .form__content {
+    margin-top: 52px;
+    padding-left: 342px;
+  }
 }

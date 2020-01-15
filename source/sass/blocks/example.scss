@@ -1,17 +1,118 @@
+.example {
+  background-color: $grey;
+}
+  
+.example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .example__title {
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: 400;
+  padding-top: 19px;
+  @include fonts(36px, 60px);
+  font-weight: 700;
+  margin-bottom: 0px;
 }
 
 .example__text {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 700;
+  @include fonts(14px, 18px);
+  font-family: $second-font;
+  font-weight: 400;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 .example__total {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
+  @include fonts(14px, 20px);
+  font-weight: 700;
+  margin-left: 46px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $white;
+    border-top: 1px solid $grey--darken;
+    position: relative;
+  }
+
+  .example__wrapper {
+    width: 710px;
+    margin: 0 auto;
+  }
+
+  .example__title {
+    @include fonts(60px, 60px);
+    font-weight: 700;
+    margin-top: 23px;
+    margin-bottom: 65px;
+    padding-left: 1px;
+  }
+
+  .example__text {
+    @include fonts(16px, 24px);
+    font-family: $second-font;
+    width: 680px;
+  }
+
+  .example__total {
+    display: inline-block;
+    position: absolute;
+    @include fonts(20px, 20px);
+    font-weight: 700;
+    width: 190px;
+    text-transform: uppercase;
+    text-align: right;
+    left: 500px;
+    top: 303px;
+  }
+
+    .example__total--right {
+      position: relative;
+      top: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .example {
+    width: 1000px;
+    position: relative;
+    margin-top: 175px;
+    border-top: none;
+    background-color: $grey;
+    height: 460px;
+  }
+
+  .example__wrapper {
+    width: 1220px;
+    left: 340px;
+    position: absolute;
+  }
+
+  .example__title {
+    position: absolute;
+    top: -175px;
+    left: 1px;
+  }
+
+  .example__text {
+    @include fonts(16px, 24px);
+    font-family: $second-font;
+    width: 435px;
+    margin-top: 73px;
+    padding-left: 2px;
+  }
+
+  .example__total {
+    width: 325px;
+    left: -45px;
+    top: 368px;
+    text-align: left;
+  }
+
+  .example__total--right {
+    left: 60px;
+    top: 1px;
+  }
 }

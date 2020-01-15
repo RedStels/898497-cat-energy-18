@@ -1,13 +1,48 @@
+.goods-table {
+  width: 139px;
+  margin-left: 162px;
+  position: relative;
+  top: -70px;
+  border-collapse: collapse;
+}
+
 .goods-table__value {
   font-family: $second-font;
-  font-size: 12px;
-  line-height: 16px;
+  @include fonts(12px, 16px);
   font-weight: 400;
+  @include resetter();
 }
 
 .goods-table__field {
-  font-family: $second-font;	
-  font-size: 12px;
-  line-height: 16px;
+  font-family: $second-font;
+  @include fonts(12px, 16px);
   font-weight: 400;
+  text-align: right;
+  @include resetter();
+}
+
+
+@media (min-width: $tablet-width) {
+  .goods-table {
+    height: 96px;
+    width: 249px;
+    left: -125px;
+    top: 48px;
+    border-collapse: collapse;
+  }
+
+  .goods-table__value, .goods-table__field {
+    @include fonts(16px, 16px);
+    padding-bottom: 0px;
+    border-bottom: 1px solid $grim--dark;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-table {
+    width: 167px;
+    left: -123px;
+    top: 72px;
+    border-collapse: collapse;
+  }
 }
