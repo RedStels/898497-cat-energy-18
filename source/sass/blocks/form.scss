@@ -50,13 +50,19 @@
 
 @media (min-width: $desktop-width) {
 
+  .form {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
   .form__head {
     margin-top: 72px;
-    padding-left: 342px;
+    margin-left: 10px;
   }
 
   .form__content {
     margin-top: 52px;
-    padding-left: 342px;
+    padding-left: 0px;
+    margin-left: 40px;
   }
 }

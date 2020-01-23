@@ -1,7 +1,7 @@
 .form-feedback {
   width: 320px;
 }
- 
+
 .form-feedback__text {
   width: 263px;
   min-height: 135px;
@@ -37,10 +37,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-feedback {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
   .form-feedback__text {
     width: 1199px;
     height: 150px;
-    margin-left: 341px;
+    position: relative;
+    top: 5px;
+    left: -30px;
   }
 }
- 

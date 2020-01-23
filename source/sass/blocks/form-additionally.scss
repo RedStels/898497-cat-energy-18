@@ -104,7 +104,10 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-    margin-left: 321px;
+    position: relative;
+    top: 8px;
+    left: -30px;
+    margin-bottom: 25px;
   }
 
   .form-additionally__item {

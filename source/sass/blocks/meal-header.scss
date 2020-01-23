@@ -4,7 +4,7 @@
   min-height: 480px;
   text-align: center;
 }
- 
+
 .meal-header__intro {
   @include resetter();
   @include fonts(36px, 36px);
@@ -84,16 +84,19 @@
 @media (min-width: $desktop-width) {
 
   .meal-header {
-    width: 1260px;
+    position: relative;
+    width: 860px;
+    top: -580px;
+    left: -269px;
   }
 
   .meal-header__intro {
     margin-top: 80px;
-    padding-left: 100px;
+    padding-left: 170px;
   }
 
   .meal-header__slogan {
-    padding-left: 100px;
+    padding-left: 170px;
     margin-top: 14px;
     @include fonts(20px, 20px);
     color: $black;
@@ -101,9 +104,12 @@
   }
 
   .meal-header__to-form {
-    top: 457px;
-    left: 421px;
-    padding: 15px 28px;
+    position: relative;
+    top: -452px;
+    left: -414px;
+
+    padding: 12px 28px;
+
     &:hover {
       background-color: $green--dark;
     }
@@ -114,9 +120,9 @@
   }
 
   .meal-header__image {
-    position: absolute;
-    top: 141px;
-    left: 794px;
+    position: relative;
+    top: -294px;
+    left: 511px;
     width: 550px;
     height: 500px;
   }
