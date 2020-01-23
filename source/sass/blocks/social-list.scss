@@ -23,10 +23,12 @@
   height: 16px;
 }
 
+
 .social-list__icon-facebook {
   width: 14px;
   height: 20px;
 }
+
 
 .social-list__item {
   width: 15px;
@@ -84,9 +86,9 @@
   }
 }
 
-  @media (min-width: $desktop-width) {
-      .social-list {
-        top: 0px;
-        left: -12px;
-      }
-  } 
+@media (min-width: $desktop-width) {
+  .social-list {
+    top: 0px;
+    left: -12px;
+  }
+}

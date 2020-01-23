@@ -1,7 +1,7 @@
 .example {
   background-color: $grey;
 }
-  
+
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -67,51 +67,52 @@
     top: 303px;
   }
 
-    .example__total--right {
-      position: relative;
-      top: 9px;
+  .example__total__right {
+    position: relative;
+    top: 9px;
   }
 }
 
 @media (min-width: $desktop-width) {
 
   .example {
-    width: 1000px;
+    width: 100%;
     position: relative;
-    margin-top: 175px;
     border-top: none;
+    height: 462px;
     background-color: $grey;
-    height: 460px;
   }
 
   .example__wrapper {
-    width: 1220px;
-    left: 340px;
-    position: absolute;
+    width: 1020px;
+    position: relative;
+    left: -100px;
+    margin: 0 auto;
+    margin-top: 80px;
   }
 
   .example__title {
-    position: absolute;
-    top: -175px;
-    left: 1px;
+    position: relative;
+    top: -150px;
   }
 
   .example__text {
+    position: relative;
+    top: -70px;
     @include fonts(16px, 24px);
     font-family: $second-font;
     width: 435px;
-    margin-top: 73px;
-    padding-left: 2px;
   }
 
   .example__total {
+    position: relative;
     width: 325px;
-    left: -45px;
-    top: 368px;
+    left: -46px;
+    top: -30px;
     text-align: left;
   }
 
-  .example__total--right {
+  .example__total__right {
     left: 60px;
     top: 1px;
   }

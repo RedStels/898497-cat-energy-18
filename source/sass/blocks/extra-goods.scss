@@ -186,48 +186,47 @@
 @media (min-width: $desktop-width) {
   .extra-goods {
     position: relative;
-    width: 1440px;
-    height: 425px; 
+    width: 1300px;
+    height: 425px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
-
   }
 
   .extra-goods__head {
-    width: 1440px;
+    width: 400px;
     @include fonts(36px, 36px);
     position: relative;
-    top: -102px;
-    left: 110px;
-    margin-bottom: 0px;
+    top: -72px;
+    left: 36px;
+    margin: 0 auto;
 
     &::before,
     &::after {
-      position: absolute;
       content: "";
-
+      position: absolute;
       background-color: $green;
       height: 3px;
     }
 
     &::before {
-      left: -110px;
+      left: -107px;
       width: 70px;
+      top: 31px;
     }
 
     &::after {
       top: 31px;
-      width: 955px;
+      width: 887px;
     }
   }
 
   .extra-goods__list {
     width: 893px;
     position: relative;
-    top: -102px;
-    left: -163px;
+    top: -17px;
+    left: -365px;
   }
 
   .extra-goods__item {
@@ -260,7 +259,7 @@
     text-align: right;
   }
 
-  .extra-goods__item:nth-child(2) .extra-goods__field{
+  .extra-goods__item:nth-child(2) .extra-goods__field {
     left: 41px;
   }
 

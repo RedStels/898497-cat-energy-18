@@ -8,3 +8,12 @@
     background-image: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .meal {
+    width: 1300px;
+    height: 505px;
+    margin: 0 auto;
+  }
+}
+  

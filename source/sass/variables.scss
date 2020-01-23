@@ -43,7 +43,9 @@ $grey-button-color: $grey;
 $grey-button-color--hover: $grey--dark; 
 
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1300px;
+$desktop-width-max: 1440px;
 $mobile-width-only: 767px;
+$retina-dppx: 1.5dppx;
 $default-font: "Oswald", "Arial", sans-serif;
 $second-font: "Arial", sans-serif;

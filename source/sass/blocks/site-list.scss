@@ -1,7 +1,7 @@
 .site-list {
   list-style: none;
 }
- 
+  
 .site-list a {
   display: block;
   padding: 12px 0px;
@@ -13,8 +13,7 @@
 
   background-color: $white;
   border-bottom: 1px solid $grey;
-}
-
+} 
 
 @media (min-width: $tablet-width) {
   .site-list {
@@ -32,7 +31,7 @@
     box-sizing: border-box;
   }
 
-  .site-list .site-list__item--active {
+  .site-list .site-list__item__active {
     margin-bottom: 2px;
     padding-bottom: 8px;
     border-bottom: 2px solid $green;
@@ -42,7 +41,7 @@
 @media (min-width: $desktop-width) {
 
   .site-list {
-    width: 480px;
+    width: 490px;
   }
 
   .site-list a {
@@ -59,15 +58,15 @@
   }
 
   .site-list__only-index .site-list__item {
-    padding-right: 30px;
+    padding-right: 31px;
   }
 
   .site-list__only-index .site-list__item:last-child {
-    padding-right: 0px;
+    padding-right: 5px;
   }
 
   .site-list__item {
-    padding-right: 35px;
+    padding-right: 30px;
   }
 
   .site-list__item:last-child {
@@ -96,13 +95,13 @@
       border-bottom: 2px solid $white;
     }
   }
-  .site-list .site-list__item--active {
+  .site-list .site-list__item__active {
     margin-bottom: 2px;
     padding-bottom: 8px;
     border-bottom: 2px solid $green;
   }
   
-  .site-list__only-index .site-list__item--active {
+  .site-list__only-index .site-list__item__active {
     margin-bottom: 2px;
     padding-bottom: 8px;
     border-bottom: 2px solid $white;

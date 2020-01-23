@@ -244,9 +244,10 @@
 
 @media (min-width: $desktop-width) {
   .meal-program {
+    position: relative;
+    top: -706px;
     width: 1220px;
-    margin-left: 340px;
-    margin-top: 144px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

@@ -61,13 +61,13 @@
 
 @media (min-width: $desktop-width) {
   .offer {
-    position: absolute;
+    position: relative;
     width: 245px;
     height: 290px;
     background-image: url(../img/gift-photo-desktop@1x.jpg);
     margin: 0px;
-    top: 53px;
-    left: 1085px;
+    top: -305px;
+    left: 1015px;
   }
 
   .offer__title {
